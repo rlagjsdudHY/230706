@@ -24,7 +24,19 @@ form#joinForm {		width: 260px; 	margin: 10px auto;	}
 #joinForm div.joinFormInnerDiv {		margin-bottom: 10px; }			
 					
 /* 회원가입 끝 */
-
+footer#footer	p,	footer#footer	address	{ margin:	10px; }
+/*	회원가입	시작	*/
+form#joinForm	{ width:	260px;	 margin:	10px	auto; }
+#joinForm	input,
+#joinForm	button	{ width:	100%;	font-size:	17px;	 padding:	6px	14px; }
+#joinForm	div.joinFormInnerDiv	{ margin-bottom:	10px;	}
+/*	회원가입	끝	*/
+/*	로그인	시작	*/
+form#loginForm	{ width:	260px;	 margin:	10px	auto; }
+#loginForm	input,
+#loginForm	button	{ width:	100%;	font-size:	17px;	 padding:	6px	14px; }
+#loginForm	div.loginFormInnerDiv	{ margin-bottom:	10px;	}
+/*	로그인	끝	*/
 
 
 

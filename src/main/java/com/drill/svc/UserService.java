@@ -11,14 +11,20 @@ import com.drill.domain.repo.UserRepository;
 
 @Service
 public class UserService {
-	
+
 	@Autowired
 	private UserRepository userRepository;
-	
+
 	@Transactional
 	public void join(User user) {
 		user.setRole(UserRoleStatus.USER);
 		userRepository.save(user);
+	}
+
+	@Transactional
+	public User getUser(String userid) {
+		User findUser = userRepository.findByUserid(userid).orElseGet(() -> new User());
+		return findUser;
 	}
 
 }
